@@ -1,4 +1,29 @@
-#standardwagebox {
+body {
+    font-family: 'Lato';
+    font-size: 22px;
+}
+
+h1 {
+    font-family: 'Fira Sans';
+    font-size: 60px;
+}
+
+#bannerbox {
+    font-family: 'Fira Sans';
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#bannerbox h1 {
+    font-family: 'Fira Sans';
+    font-size: 72px;
+    font-weight: bold;
+}
+
+
+
+/* #standardwagebox {
     margin: 25px;
 }
 
@@ -8,4 +33,4 @@
 
 #inputwagebox{
     margin: 25px;
-}
+} */
