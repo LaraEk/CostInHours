@@ -6,6 +6,15 @@ h1 {
     font-family: 'Fira Sans';
     font-size: 60px;
 }
+.costcards {
+    text-align: center;
+
+}
+.costcards h1 {
+    font-family: 'Fira Sans';
+    font-size: 48px;
+    font-weight: bold;
+}
 
 h4 {
     font-family: 'Fira Sans';
