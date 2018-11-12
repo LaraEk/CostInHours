@@ -6,9 +6,27 @@ h1 {
     font-family: 'Fira Sans';
     font-size: 60px;
 }
+
+#natlminwagebox {
+    margin: 20px;
+    padding: 20px;
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAASElEQVQoU2NkYGBgeP369X9RUVFGGBtEI/NBbEZ0RegKYJrBpqCbik0Mbh3MJJgidMUoVqMrQlZMvEJc7sOwmmjPkBQ8xAQ4AJO/ZwsCZbRTAAAAAElFTkSuQmCC);
+}
+
+#chooseyourstatebox {
+    margin: 20px;
+    padding: 20px;
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAASElEQVQoU2NkYGBgeP369X9RUVFGGBtEI/NBbEZ0RegKYJrBpqCbik0Mbh3MJJgidMUoVqMrQlZMvEJc7sOwmmjPkBQ8xAQ4AJO/ZwsCZbRTAAAAAElFTkSuQmCC);
+}
+
+#bannerbox h1 {
+    font-family: 'Fira Sans';
+    font-size: 100px;
+}
+
 .costcards {
     text-align: center;
-
+    height: 400px;
 }
 .costcards h1 {
     font-family: 'Fira Sans';
