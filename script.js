@@ -17,7 +17,7 @@ $(document).ready(function(){
     const fillasmalltank = 33;
 
 //METRO
-    const metroparkinig = 4.85;
+    const metroparking = 4.85;
 
 $("#nationalwagebutton").on("click", function() {
     alert("I clicked it");

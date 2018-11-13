@@ -24,14 +24,33 @@ h1 {
     font-size: 100px;
 }
 
+.title {
+    font-family: 'Fira Sans';
+    font-size: 200%;
+}
+
 .costcards {
     text-align: center;
-    height: 350px;
+    height: auto;
+    font-family: 'Fira Sans';
 }
+
+img.responsive-image{
+    height: auto;
+}
+
+/* .row .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+} */
+
 .costcards h1 {
     font-family: 'Fira Sans';
-    font-size: 48px;
+    font-size: 250%;
     font-weight: bold;
+    text-align: right;
+    background-color: rgb(255, 255, 255, .5);
 }
 
 h4 {
