@@ -10,6 +10,7 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira Sans'>
     <link rel="stylesheet" href="./materialize/css/materialize.css" type="text/css" media="screen,projection"/>
     <link rel="stylesheet" href="css.css" type="text/css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -39,12 +40,12 @@
     <div class="container">
         <div class="section">
             <div class="row">
-                <div class="col s5 m5" id="natlminwagebox">
+                <div class="col s12 m5" id="natlminwagebox">
                     <h4>National Minimum Wage in the United States</h4>
                     <p class="flow-text" style="font-family: 'Lato'; font-size: 18px">Since July 24, 2009, the federal government has mandated a nationwide minimum wage of $7.25 per hour. [Wikipedialink] LOREM IPSUM DOLOR SIT AMET, CONSECTETUTOR ADEPISCING ET. </p>
                     <a class="waves-effect waves-light btn-large" id="nationalwagebutton" href="#middle"><i class="material-icons right">arrow_forward</i>WHAT DOES AN HOUR BUY ME? </a>
                 </div>
-                <div class="col s5 m5" id="chooseyourstatebox">
+                <div class="col s12 m5" id="chooseyourstatebox">
                     <h4>Choose Your State</h4>
                     <p class="flow-text" style="font-family: 'Lato'; font-size: 18px">Choose your state from the list below. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id suscipit ex, ac venenatis lacus. </p>
                     <a class="waves-effect waves-light btn-large"><i class="material-icons right">arrow_forward</i>WHAT DOES AN HOUR BUY ME? </a>
@@ -63,9 +64,15 @@
                             <span class="title">If I Want A Title It'll Go Here</span>
                             <a name="middle"></a>
                         </div> <!-- End Title Span Column-->
-                        <div class="col s12 m4 14 costcards">
-                            <div class="card">
-                                <img src="https://fakeimg.pl/200x100/?text=pic of food">
+                        <div class="col s6 m4 14 costcards">
+                            <div class="card teal lighten-3">
+                                <img width="450" 
+                                    height="350" 
+                                    src="./img/foodpic.png" 
+                                    class="responsive-img" 
+                                    alt="food" 
+                                    title="food" 
+                                    sizes="(max-width: 450px) 50vw, 450px">
                                 <h1>FOOD</h1>
                                 <p>Avg groc/wk (family of 4, low-cost):~$200</p>
                                 <div id="costoffooddiv"></div>
@@ -76,9 +83,15 @@
                                 <p>https://www.usatoday.com/story/news/nation/2013/05/01/grocery-costs-for-family/2104165/</p> -->
                             </div>
                         </div>
-                        <div class="col s12 m4 14 costcards">
-                            <div class="card">
-                                <img src="https://fakeimg.pl/200x100/?text=pic of gas">
+                        <div class="col s6 m4 14 costcards">
+                            <div class="card teal lighten-3">
+                                <img width="450" 
+                                    height="350" 
+                                    src="./img/gaspic.png" 
+                                    class="responsive-img" 
+                                    alt="gas" 
+                                    title="gas" 
+                                    sizes="(max-width: 450px) 50vw, 450px">
                                 <h1>GAS</h1>
                                 <p>Fill a 12-gal tank: $33</p>
                                 <div id="costofgasdiv"></div>
@@ -87,10 +100,16 @@
                                 <p>Fill a 15-gal tank: $41.25</p> -->
                             </div>
                         </div>
-                        <div class="col s12 m4 14 costcards">
-                            <div class="card">
-                                <img src="https://fakeimg.pl/200x100/?text=pic of metro">
-                                <h1>DC METRO</h1>
+                        <div class="col s6 m4 14 costcards">
+                            <div class="card teal lighten-3">
+                                <img width="450" 
+                                    height="350" 
+                                    src="./img/metropic.png" 
+                                    class="responsive-img" 
+                                    alt="metro" 
+                                    title="metro" 
+                                    sizes="(max-width: 450px) 50vw, 450px">
+                               <h1>DC METRO</h1>
                                 <p>Metro parking (gen'l): $4.85</p>
                                 <div id="costofmetrodiv"></div>
                                 <!-- <p>Metro ticket (off-peak min): $2.00 </p>
@@ -99,40 +118,76 @@
                                 <p>Metro parking (most exp): $8.95</p> -->
                             </div>
                         </div>
-                        <div class="col s12 m4 14 costcards">
-                            <div class="card">
-                                <img src="https://fakeimg.pl/200x100/?text=items bought for money">
-                                <h1>SOMETHING</h1>
+                        <div class="col s6 m4 14 costcards">
+                            <div class="card teal lighten-3">
+                                <img width="450" 
+                                    height="350" 
+                                    src="./img/moviepic.png" 
+                                    class="responsive-img" 
+                                    alt="movie" 
+                                    title="movie" 
+                                    sizes="(max-width: 450px) 50vw, 450px">
+                                <h1>MOVIE</h1>
                             </div>
                         </div>
-                        <div class="col s12 m4 14 costcards">
-                            <div class="card red accent-1">
-                                <img src="https://fakeimg.pl/200x100/?text=center card">
+                        <div class="col s6 m4 14 costcards">
+                            <div class="card teal lighten-3">
+                                <img width="450" 
+                                    height="350" 
+                                    src="./img/insurpic.png" 
+                                    class="responsive-img" 
+                                    alt="center card" 
+                                    title="center card" 
+                                    sizes="(max-width: 450px) 50vw, 450px">
                                 <h1>CENTER CARD</h1>
                             </div>
                         </div>
-                        <div class="col s12 m4 14 costcards">
-                            <div class="card">
-                                <img src="https://fakeimg.pl/200x100/?text=more items bought for money">
-                                <h1>SOMETHING ELSE</h1>
+                        <div class="col s6 m4 14 costcards">
+                            <div class="card teal lighten-3">
+                                <img width="450" 
+                                    height="350" 
+                                    src="./img/funpic.png" 
+                                    class="responsive-img" 
+                                    alt="entertainment" 
+                                    title="entertainment" 
+                                    sizes="(max-width: 450px) 50vw, 450px">
+                                <h1>ENTERTAINMENT</h1>
                             </div>
                         </div>
-                        <div class="col s12 m4 14 costcards">
-                            <div class="card">
-                                <img src="https://fakeimg.pl/200x100/?text=525,600 minutes">
+                        <div class="col s6 m4 14 costcards">
+                            <div class="card teal lighten-3">
+                                <img width="450" 
+                                    height="350" 
+                                    src="./img/rentpic.png" 
+                                    class="responsive-img" 
+                                    alt="rent" 
+                                    title="rent" 
+                                    sizes="(max-width: 450px) 50vw, 450px">
                                 <h1>RENT</h1>
                             </div>
                         </div>
-                        <div class="col s12 m4 14 costcards">
-                            <div class="card">
-                                <img src="https://fakeimg.pl/200x100/?text=who knows">
-                                <h1>???</h1>
+                        <div class="col s6 m4 14 costcards">
+                                <div class="card teal lighten-3">
+                                    <img width="450" 
+                                        height="350" 
+                                        src="https://fakeimg.pl/450x350/?text=who knows" 
+                                        class="responsive-img" 
+                                        alt="???" 
+                                        title="???" 
+                                        sizes="(max-width: 450px) 50vw, 450px">
+                                    <h1>???</h1>
                             </div>
                         </div>
-                        <div class="col s12 m4 14 costcards">
-                            <div class="card">
-                                <img src="https://fakeimg.pl/200x100/?text=pic of poop">
-                                <h1>INSURANCE</h1>
+                        <div class="col s6 m4 14 costcards">
+                            <div class="card teal lighten-3">
+                                <img width="450" 
+                                    height="350" 
+                                    src="./img/insurpic.png" 
+                                    class="responsive-img" 
+                                    alt="insurance" 
+                                    title="insurance" 
+                                    sizes="(max-width: 450px) 50vw, 450px">
+                                <span class="card-title"><h1>INSURANCE</h1></span>
                             </div>
                         </div>
 
@@ -150,11 +205,31 @@
                 <div class="col s12 m12">
                     <h4>Sources and Citations</h4>
                     <p class="flow-text" style="font-family: 'Lato'; font-size: 18px">This is where I'll list sources plus links to their sources whee</p>
+
+                    <p class="flow-text" style="font-family: 'Lato'; font-size: 18px">Stock images are drawn from pexels.com and canva.com.  Background is from <a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a>; CSS pattern is from <a href="http://www.patternify.com/">Patternify</a>.</p>
+
                     <a class="waves-effect waves-light btn-large" id="nationalwagebutton" href="#middle"><i class="material-icons right">arrow_forward</i>do I need a button here? I've got one if I need it.</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <footer class="page-footer">
+        <div class="footer-copyright">
+          <div class="container">
+                Cost in Hours is © Lara Ek 2018
+          <a class="grey-text text-lighten-4 right" href="#!">
+                <big>
+                    <a href="https://github.com/LaraEk"><i class="fa fa-github"></i></a>
+                    <a href="https://linkedin.com/in/lara-ek/"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://angel.co/lara-ek"><i class="fa fa-angellist"></i></a>
+                    <a href="https://www.amazon.com/Lara-Ek/e/B01N4F2TQD"><i class="fa fa-amazon"></i></a>
+                    <a href="mailto:larakek@gmail.com">@</a>
+                </big>
+          </a>
+          </div>
+        </div>
+      </footer>
     <!-- NOTE: HERE I WANT A SECTION THAT'S GOING TO BE ABOUT EXPLAINING THE OVERALL VISION AND ALSO NEXT STEPS -->
 
       <!-- TO ADD: once deployed, how to share this tool on Social Media -->
