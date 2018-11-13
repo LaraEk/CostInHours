@@ -1,11 +1,21 @@
-p {
-    font-family: 'Lato';
+/* ----- */
+/* ----- */
+
+#bannerbox {
+    font-family: 'Fira Sans';
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
 }
 
-h1 {
+#bannerbox h1 {
     font-family: 'Fira Sans';
-    font-size: 60px;
+    font-size: 72px;
+    font-weight: bold;
 }
+/* ----- */
+/* ----- */
+
 
 #natlminwagebox {
     margin: 2%;
@@ -19,10 +29,10 @@ h1 {
     background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAASElEQVQoU2NkYGBgeP369X9RUVFGGBtEI/NBbEZ0RegKYJrBpqCbik0Mbh3MJJgidMUoVqMrQlZMvEJc7sOwmmjPkBQ8xAQ4AJO/ZwsCZbRTAAAAAElFTkSuQmCC);
 }
 
-#bannerbox h1 {
-    font-family: 'Fira Sans';
+/* #bannerbox h1{
+    font-family: 'Abel';
     font-size: 100px;
-}
+} */
 
 .title {
     font-family: 'Fira Sans';
@@ -46,7 +56,7 @@ img.responsive-image{
 } */
 
 .costcards h1 {
-    font-family: 'Fira Sans';
+    font-family: 'Abel';
     font-size: 250%;
     font-weight: bold;
     text-align: right;
@@ -58,20 +68,6 @@ h4 {
     font-size: 30px;
     font-weight: bold;
 }
-
-#bannerbox {
-    font-family: 'Fira Sans';
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-}
-
-#bannerbox h1 {
-    font-family: 'Fira Sans';
-    font-size: 72px;
-    font-weight: bold;
-}
-
 
 
 /* #standardwagebox {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira Sans'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Abel'>
     <link rel="stylesheet" href="./materialize/css/materialize.css" type="text/css" media="screen,projection"/>
     <link rel="stylesheet" href="css.css" type="text/css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
@@ -33,7 +34,7 @@
     </div>
   </nav>
 
-    <div class="card-panel" id="bannerbox" style="background: url('./img/moneybannerdenim.jpg')">
+    <div class="card-panel bannerbox" id="bannerbox" style="background: url('./img/moneybannerdenim.jpg')">
         <h1>Cost in Hours</h1>
         <p class="flow-text">Minimum wage in the United States is $7.25.  <br/>What can you buy with an hour?</p>
     </div>
@@ -130,6 +131,8 @@
                                     title="movie" 
                                     sizes="(max-width: 450px) 50vw, 450px">
                                 <h1>MOVIE</h1>
+                                <p>Average price of a movie in the US</p>
+                                <div id="costofmoviediv"></div>
                             </div>
                         </div>
                         <div class="col s6 m4 14 costcards">
@@ -154,6 +157,8 @@
                                     title="entertainment" 
                                     sizes="(max-width: 450px) 50vw, 450px">
                                 <h1>ENTERTAINMENT</h1>
+                                <p>Cost of Maryland Renaissance Festival, 1 adult tkt: $26</p>
+                                <div id="costoffundiv"></div>
                             </div>
                         </div>
                         <div class="col s6 m4 14 costcards">
@@ -166,6 +171,8 @@
                                     title="rent" 
                                     sizes="(max-width: 450px) 50vw, 450px">
                                 <h1>RENT</h1>
+                                <p>Average rent for a month in US: $</p>
+                                <div id="costofrentdiv"></div>
                             </div>
                         </div>
                         <div class="col s6 m4 14 costcards">
@@ -174,11 +181,13 @@
                                         height="350" 
                                         src="https://fakeimg.pl/450x350/?text=who knows" 
                                         class="responsive-img" 
-                                        alt="???" 
-                                        title="???" 
+                                        alt="edu" 
+                                        title="edu" 
                                         sizes="(max-width: 450px) 50vw, 450px">
-                                    <h1>???</h1>
-                            </div>
+                                    <h1>EDUCATION</h1>
+                                    <p>Average cost of college, 1 semester: $</p>
+                                    <div id="costofedudiv"></div>
+                                </div>
                         </div>
                         <div class="col s6 m4 14 costcards">
                             <div class="card teal lighten-2">
@@ -190,6 +199,8 @@
                                     title="insurance" 
                                     sizes="(max-width: 450px) 50vw, 450px">
                                 <h1>INSURANCE</h1>
+                                <p>Average 1 mo health insurance in US: $</p>
+                                <div id="costofinsurdiv"></div>
                                 <a class="waves-effect waves-light btn-large" id="nationalwagebutton" href="#middle"><i class="material-icons right">arrow_forward</i>do I need a button here? I've got one if I need it.</a>
                             </div>
                         </div>

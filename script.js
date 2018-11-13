@@ -6,9 +6,9 @@ $(document).ready(function(){
     const natlminwage = 7.25;
 
 // EMPTY CONSTS
-    const costoffood = 0;
-    const costofgas = 0;
-    const costofmetro = 0;
+    let costoffood = 0;
+    let costofgas = 0;
+    let costofmetro = 0;
 
 //FOOD
     const familyfouroneweek = 200;
@@ -23,8 +23,17 @@ $("#nationalwagebutton").on("click", function() {
     alert("I clicked it");
     console.log("I clicked it");
     
-    $("#costoffooddiv").
+    costoffood = (familyfouroneweek/natlminwage);
+    $("#costoffooddiv").text(costoffood);
+    console.log("cost of food is" + costoffood);
 
+    costofgas = (fillasmalltank/natlminwage);
+    $("#costofgasdiv").text(costofgas);
+    console.log("cost of gas is" + costofgas);
+
+    costofmetro = (metroparking/natlminwage);
+    $("#costofmetrodiv").text(costofmetro);
+    console.log("cost of metro is" + costofmetro);
 
 })
 
