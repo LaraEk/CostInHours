@@ -36,11 +36,12 @@ $(document).ready(function(){
     const fillalargedieseltank = 49.095;
 
 //METRO
-    const metroparking = 4.85;
-//    <!-- <p>Metro ticket (off-peak min): $2.00 </p>
-//    <p>Metro ticket (peak longest): $6.00 </p>
-//    <p>Metro parking (gen'l): $4.85</p>
-//    <p>Metro parking (most exp): $8.95</p> -->
+    const peakmin = 2.25;
+    const peakmax = 6;
+    const offpeakmin = 2;
+    const offpeakmax = 3.85;
+    const metroparking = 4.95;
+    const metroparkingmax = 8.95;
 
 //MOVIE
     const avgmovieprice = 9.14;
@@ -130,10 +131,38 @@ $("#nationalwagebutton").on("click", function() {
     console.log("cost of food is" + costofgassix);
 
 
-    
+// ----- METRO SECTION    
+// ---------- main metro card
     costofmetro = (metroparking/natlminwage).toFixed(2);
     $("#costofmetrodiv").text(costofmetro + " HOURS");
     console.log("cost of metro is" + costofmetro);
+
+// ---------- metro modal    
+    costofmetroone = (peakmin/natlminwage).toFixed(2);
+    $("#peakmindiv").text(costofmetroone + " HOURS");
+    console.log("cost of food is" + costofmetroone);
+
+    costofmetrotwo = (peakmax/natlminwage).toFixed(2);
+    $("#peakmaxdiv").text(costofmetrotwo + " HOURS");
+    console.log("cost of food is" + costofmetrotwo);
+
+    costofmetrothree = (offpeakmin/natlminwage).toFixed(2);
+    $("#offpeakmindiv").text(costofmetrothree + " HOURS");
+    console.log("cost of food is" + costofmetrothree);
+
+    costofmetrofour = (offpeakmax/natlminwage).toFixed(2);
+    $("#offpeakmaxdiv").text(costofmetrofour + " HOURS");
+    console.log("cost of food is" + costofmetrofour);
+
+    costofmetrofive = (metroparking/natlminwage).toFixed(2);
+    $("#metroparkingdiv").text(costofmetrofive + " HOURS");
+    console.log("cost of food is" + costofmetrofive);
+
+    costofmetrosix = (metroparkingmax/natlminwage).toFixed(2);
+    $("#metroparkingmaxdiv").text(costofmetrosix + " HOURS");
+    console.log("cost of food is" + costofmetrosix);
+
+
 
     costofmovie = (avgmovieprice/natlminwage).toFixed(2);
     $("#costofmoviediv").text(costofmovie + " HOURS");

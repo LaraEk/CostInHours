@@ -150,16 +150,42 @@
 
                         <div class="col s6 m4 14 costcards">
                             <div class="card teal lighten-2">
-                                <img width="450" 
-                                    height="350" 
-                                    src="./img/metropic.png" 
-                                    class="responsive-img" 
-                                    alt="metro" 
-                                    title="metro" 
-                                    sizes="(max-width: 450px) 50vw, 450px">
+                                <a class="waves-effect waves-light modal-trigger" href="#metromodal">
+                                    <img width="450" 
+                                        height="350" 
+                                        src="./img/metropic.png" 
+                                        class="responsive-img" 
+                                        alt="metro" 
+                                        title="metro" 
+                                        sizes="(max-width: 450px) 50vw, 450px">
+                                </a>
                                 <h1> METRO: <div id="costofmetrodiv"></div></h1>
                             </div>
                         </div>
+
+                        <!-- Metro Info Modal -->
+                        <div id="metromodal" class="modal">
+                          <div class="modal-content">
+                            <h4>Cost of Metro</h4>
+                            <p class="flow-text">Metro costs are calculated from <a href="https://www.wmata.com/fares/rail.cfm">
+                                the WMATA Metrorail Fares page</a>.  The $4.95 average is taken both to represent the 
+                                average metro trip at peak as well as average metro parking.  Minumum and maximum tickets 
+                                and parking prices vary, as seen below:  
+                            </p>
+                        
+                            <h5> Peak SmarTrip Fare (Min) Cost in Hours: <div id="peakmindiv"></div></h5>
+                            <h5> Peak SmarTrip Fare (Max) Cost in Hours: <div id="peakmaxdiv"></div></h5>
+                            <h5> Off-Peak SmarTrip Fare (Min) Cost in Hours: <div id="offpeakmindiv"></div></h5>
+                            <h5> Off-Peak SmarTrip Fare (Max) Cost in Hours: <div id="offpeakmaxdiv"></div></h5>
+                            <h5> Parking Fare (Avg) Cost in Hours: <div id="metroparkingdiv"></div></h5>
+                            <h5> Parking Fare (Max) Cost in Hours: <div id="metroparkingmaxdiv"></div></h5>
+                        
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Return to Page</a>
+                          </div>
+                        </div>
+
                         <div class="col s6 m4 14 costcards">
                             <div class="card teal lighten-2">
                                 <img width="450" 
