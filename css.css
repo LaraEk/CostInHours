@@ -122,6 +122,13 @@ img.responsive-image{
     background-color: rgb(255, 255, 255, .5);
 }
 
+#centercard h5 {
+    font-family: 'Abel';
+    font-size: 90%;
+    font-weight: bold;
+    text-align: center;
+}
+
 /* ----- */
 /* CARDS */
 /* ----- */

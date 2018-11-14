@@ -67,9 +67,10 @@ $(document).ready(function(){
     const fulltimestu = 10230;
     const comcoll = 4847;
 
-
 //INSURANCE
-// Average 1 mo health insurance in US: $</p>
+    const indivmonthprem = 440;
+    const fammonthprem = 1168;
+
 
 $("#nationalwagebutton").on("click", function() {
     console.log("I clicked it");
@@ -252,7 +253,7 @@ $("#nationalwagebutton").on("click", function() {
 
 // ----- EDU SECTION    
 // ---------- main edu card
-    costofedu = (avgmovieprice/natlminwage).toFixed(2);
+    costofedu = (fulltimestu/natlminwage).toFixed(2);
     $("#costofedudiv").text(costofedu + " HOURS");
     console.log("cost of edu is" + costofedu);
 
@@ -268,11 +269,19 @@ $("#nationalwagebutton").on("click", function() {
 
 // ----- INS SECTION    
 // ---------- main ins card
-    costofins = (avgmovieprice/natlminwage).toFixed(2);
+    costofins = (indivmonthprem/natlminwage).toFixed(2);
     $("#costofinsdiv").text(costofins + " HOURS");
     console.log("cost of ins is" + costofins);
 
 // ---------- ins modal    
+    costofinsone = (indivmonthprem/natlminwage).toFixed(2);
+    $("#indivmonthpremdiv").text(costofinsone + " HOURS");
+    console.log("cost of ins is" + costofinsone);
+
+    costofinstwo = (fammonthprem/natlminwage).toFixed(2);
+    $("#fammonthpremdiv").text(costofinstwo + " HOURS");
+    console.log("cost of ins is" + costofinstwo);
+
 
 })
 
@@ -281,3 +290,13 @@ $("#nationalwagebutton").on("click", function() {
 
 
 }); //to document.readyfunction
+
+
+// 24 hours in a day.
+// 720 hours in a month.
+// At a rate of 40 work hours a week,
+// 173.3 hours in a month.
+// At a rate of 60 work hours a week,
+// 259.95 hours in a month.
+// At a rate of 80 work hours a week,
+// 346.6 hours in a month.
