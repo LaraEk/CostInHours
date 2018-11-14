@@ -1,6 +1,8 @@
-console.log("script.js is connected and working");
+console.log("script.js is connected and working");  
 
 $(document).ready(function(){
+
+    $('.modal').modal();
 
 //NATL MIN WAGE
     const natlminwage = 7.25;
@@ -17,13 +19,13 @@ $(document).ready(function(){
 
 
 //FOOD
-    const familyfouroneweek = 200;
-//    <p>Avg groc/wk (family of 4, thrift): 146 (in 2013) 158 (2018)</p>
-//    <p>Avg groc/wk (family of 4, low-cost): 191 (in 2013) 206 (2018)</p>
-//    <p>Avg groc/wk (family of 4, moderate): 239 (in 2013) 258 (2018)</p>
-//    <p>Avg groc/wk (family of 4, liberal): 289 (in 2013) 313 (2018)</p>
-//    <p>https://www.usatoday.com/story/news/nation/2013/05/01/grocery-costs-for-family/2104165/</p> -->
-
+    // median of indiv 19-50 per. at mod-cost plan. used mod-cost for all calcs
+    const indivweeklycost = 65;
+    const indivmonthlycost = 275;
+    const familyoftwoweekly = 141;
+    const familyoftwomonthly = 611;
+    const familyoffourweekly = 244;
+    const familyoffourmonthly = 1057;
 
 //GAS
     const fillasmalltank = 33;
@@ -63,7 +65,7 @@ $(document).ready(function(){
 $("#nationalwagebutton").on("click", function() {
     console.log("I clicked it");
     
-    costoffood = (familyfouroneweek/natlminwage).toFixed(2);
+    costoffood = (indivmonthlycost/natlminwage).toFixed(2);
     $("#costoffooddiv").text(costoffood + " HOURS");
     console.log("cost of food is" + costoffood);
 
