@@ -64,7 +64,9 @@ $(document).ready(function(){
     const threebraptoutcity = 1582.14;
 
 //EDUCATION
-//<p>Average cost of college, 1 semester: $</p>
+    const fulltimestu = 10230;
+    const comcoll = 4847;
+
 
 //INSURANCE
 // Average 1 mo health insurance in US: $</p>
@@ -255,7 +257,15 @@ $("#nationalwagebutton").on("click", function() {
     console.log("cost of edu is" + costofedu);
 
 // ---------- edu modal    
-    
+    costofeduone = (fulltimestu/natlminwage).toFixed(2);
+    $("#fulltimestudiv").text(costofeduone + " HOURS");
+    console.log("cost of edu is" + costofeduone);
+
+    costofedutwo = (comcoll/natlminwage).toFixed(2);
+    $("#comcolldiv").text(costofedutwo + " HOURS");
+    console.log("cost of edu is" + costofedutwo);
+
+
 // ----- INS SECTION    
 // ---------- main ins card
     costofins = (avgmovieprice/natlminwage).toFixed(2);

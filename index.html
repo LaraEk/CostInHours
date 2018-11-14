@@ -336,15 +336,50 @@
 
                         <div class="col s6 m4 14 costcards">
                                 <div class="card teal lighten-2">
-                                    <img width="450" 
-                                        height="350" 
-                                        src="./img/edupic.png" 
-                                        class="responsive-img" 
-                                        alt="edu" 
-                                        title="edu" 
-                                        sizes="(max-width: 450px) 50vw, 450px">
+                                    <a class="waves-effect waves-light modal-trigger" href="#edumodal">
+                                        <img width="450" 
+                                            height="350" 
+                                            src="./img/edupic.png" 
+                                            class="responsive-img" 
+                                            alt="edu" 
+                                            title="edu" 
+                                            sizes="(max-width: 450px) 50vw, 450px">
+                                    </a>
                                     <h1>EDUCATION: <div id="costofedudiv"></div></h1>
                                 </div>
+                        </div>
+
+                        <!-- Edu Info Modal -->
+                        <div id="edumodal" class="modal">
+                          <div class="modal-content">
+                            <h4>Cost of Rent</h4>
+                            <p class="flow-text">The matter of education is intensly complicated, and 
+                                includes a variety of factors, including age level, location, and associated fees.
+                                Even restricting a discussion of education to adult education leaves the question of 
+                                2-yr/4-yr, public/private, financial aid, room and board and other fees, &c.  Thus,
+                                I have included only two figures:
+                            </p>
+                            <h5>Full-Time In-State Public Four-Year College</h5>
+                            <p class="flow-text">The average published tuition and fee price for 
+                                full-time in-state students at public four-year colleges and universities 
+                                is $10,230 in 2018-19, $250 (2.5% before adjusting for inflation) higher than 
+                                it was in 2017-18. 
+                                <a href="https://trends.collegeboard.org/college-pricing/figures-tables/average-published-undergraduate-charges-sector-2018-19">[Direct Quote]</a>   
+                            </p>
+                            <h5>Average Tuition for Public Community College</h5>
+                            <p class="flow-text">For public community colleges, 
+                                the average tuition is approximately $4,847 per year for in-state students 
+                                and $8,607 for out-of-state students (2018-19). 
+                                <a href="https://www.communitycollegereview.com/avg-tuition-stats/national-data">[Direct Quote]</a>   
+                                </p>
+                            
+                            <h5> Full-Time In-State Public Four-Year College - Cost in Hours: <div id="fulltimestudiv"></div></h5>
+                            <h5> Average Tuition for Public Community College - Cost in Hours: <div id="commcolldiv"></div></h5>
+                                         
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Return to Page</a>
+                          </div>
                         </div>
 
 
@@ -400,14 +435,18 @@
                         <ul>
                             <li>NFL Tickets: Average ticket price: $100.26 <a href="https://www.statista.com/statistics/193595/average-ticket-price-in-the-nfl-by-team/">[Source]</a></li>
                             <li>Concert Tickets: The average price of a concert ticket during the first six months of the year was $46.69. <a href="https://abcnews.go.com/Business/story?id=87981&page=1">[Source]</a></li>
-                            <li>Beer: based on google searches (difficult to find; [wip])</li>
+                            <li>Beer: If you are further interested, see the <a href="http://www.nciaa.com/content.aspx?page_id=22&club_id=160641&module_id=29898">American Nightlife Association</a>'s surprisingly comprehensive report on drinks.</li>
                             <li>Stand-up: based on google searches (difficult to find; [wip])</li>
                             <li>Maryland Renaissance Festival: one adult at gate: $26 <a href="http://www.rennfest.com/tickets">[Source]</a></li>
                             <li>Disney World Tickets: $105 <a href="https://www.zacks.com/stock/news/193115/what-are-the-ticket-prices-for-us-theme-parks">[Source]</a></li>
                         </ul>
 
                     <p class="flow-text">
-                        Rent costs are calculated from <a href="https://www.numbeo.com/cost-of-living/country_result.jsp?country=United+States"> this Cost of Living calculator for the United States</a>.  Data is based on 213468 contributions in the past 18 mo by 23,749 users, and is current to Nov 2018.   
+                        Rent costs are calculated from <a href="https://www.numbeo.com/cost-of-living/country_result.jsp?country=United+States"> this Cost of Living calculator for the United States</a>.  Data is based on 213468 contributions in the past 18 mo by 23,749 users, and is current to Nov 2018.   For more information on rent, check out <a href="https://www.apartmentlist.com/rentonomics">some articles on this site</a>.
+                    </p>
+
+                    <p class="flow-text"> 
+                        <a href="https://trends.collegeboard.org/college-pricing/figures-tables/average-published-undergraduate-charges-sector-2018-19">Full Report from College Board</a> re: education costs.  More information on <a href="https://www.collegedata.com/cs/content/content_payarticle_tmpl.jhtml?articleId=10064">The real cost of college</a> and <a href="https://trends.collegeboard.org/college-pricing">Trends in College Pricing</a>.  See also this table of <a href="https://www.communitycollegereview.com/avg-tuition-stats/national-data">Average Tuition for Public Community College</a>
                     </p>
 
                     <p class="flow-text">
