@@ -270,7 +270,7 @@
                             </div>
                         </div>
 
-                        <!-- Metro Info Modal -->
+                        <!-- Fun Info Modal -->
                         <div id="funmodal" class="modal">
                           <div class="modal-content">
                             <h4>Cost of Entertainment</h4>
@@ -278,8 +278,8 @@
                                 <ul>
                                 <li>NFL Tickets: Average ticket price: $100.26 <a href="https://www.statista.com/statistics/193595/average-ticket-price-in-the-nfl-by-team/">[Source]</a></li>
                                 <li>Concert Tickets: The average price of a concert ticket during the first six months of the year was $46.69. <a href="https://abcnews.go.com/Business/story?id=87981&page=1">[Source]</a></li>
-                                <li>Beer: based on google searches (difficult to find; [wip])</li>
-                                <li>Stand-up: based on google searches (difficult to find; [wip])</li>
+                                <li>Beer: based on prices listend <a href="https://www.numbeo.com/cost-of-living/country_result.jsp?country=United+States">here</a></li>
+                                <li>Stand-up: based on an estimation from google searches (difficult to find; [wip])</li>
                                 <li>Maryland Renaissance Festival: one adult at gate: $26 <a href="http://www.rennfest.com/tickets">[Source]</a></li>
                                 <li>Disney World Tickets: $105 <a href="https://www.zacks.com/stock/news/193115/what-are-the-ticket-prices-for-us-theme-parks">[Source]</a></li>
                                 </ul>
@@ -297,19 +297,42 @@
                           </div>
                         </div>
 
+
                         <div class="col s6 m4 14 costcards">
                             <div class="card teal lighten-2">
-                                <img width="450" 
-                                    height="350" 
-                                    src="./img/rentpic.png" 
-                                    class="responsive-img" 
-                                    alt="rent" 
-                                    title="rent" 
-                                    sizes="(max-width: 450px) 50vw, 450px">
-                                <h1>RENT: 525,600<div id="costofrentdiv"></div></h1>
+                                <a class="waves-effect waves-light modal-trigger" href="#rentmodal">
+                                    <img width="450" 
+                                        height="350" 
+                                        src="./img/rentpic.png" 
+                                        class="responsive-img" 
+                                        alt="rent" 
+                                        title="rent" 
+                                        sizes="(max-width: 450px) 50vw, 450px">
+                                </a>
+                                <h1>RENT:<div id="costofrentdiv"></div></h1>
                             </div>
                         </div>
 
+                        <!-- Rent Info Modal -->
+                        <div id="rentmodal" class="modal">
+                          <div class="modal-content">
+                            <h4>Cost of Rent</h4>
+                            <p class="flow-text">Rent costs are calculated from <a href="https://www.numbeo.com/cost-of-living/country_result.jsp?country=United+States">
+                                this Cost of Living calculator for the United States</a>.  Data is
+                                based on 213,468 contributions in the past 18 mo by 23,749 users, 
+                                and is current to Nov 2018.   
+                            </p>
+                        
+                            <h5> Apartment (1 bedroom) in City Center - Cost in Hours: <div id="onebraptincitydiv"></div></h5>
+                            <h5> Apartment (1 bedroom) Outside of Center - Cost in Hours: <div id="onebraptoutcitydiv"></div></h5>
+                            <h5> Apartment (3 bedrooms) in City Center - Cost in Hours: <div id="threebraptincitydiv"></div></h5>
+                            <h5> Apartment (3 bedrooms) Outside of Center - Cost in Hours: <div id="threebraptoutcitydiv"></div></h5>
+                                         
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Return to Page</a>
+                          </div>
+                        </div>
 
                         <div class="col s6 m4 14 costcards">
                                 <div class="card teal lighten-2">
@@ -384,6 +407,10 @@
                         </ul>
 
                     <p class="flow-text">
+                        Rent costs are calculated from <a href="https://www.numbeo.com/cost-of-living/country_result.jsp?country=United+States"> this Cost of Living calculator for the United States</a>.  Data is based on 213468 contributions in the past 18 mo by 23,749 users, and is current to Nov 2018.   
+                    </p>
+
+                    <p class="flow-text">
                         <a href="">Department of Labour Minimum Wage website</a>.  See also the Wage and Hour Division's very interesting <a href="https://www.dol.gov/whd/minwage/coverage.htm">History of Minimum Wage</a>.
                     </p>
 
@@ -427,56 +454,3 @@
 </body>
 
 </html>
-
-  <!-- ---------------------------------------------------------------- -->
-  <!-- ---------------------------------------------------------------- -->
-  <!-- ---------------------------------------------------------------- -->
-  <!-- ---------------------------------------------------------------- -->
-  <!-- ---------------------------------------------------------------- -->
-  <!-- ---------------------------------------------------------------- -->
-  <!-- ---------------------------------------------------------------- -->
-
-  
-    <!-- <div class="container"> 
-        
-        <div class="card-panel" style="background: url('moneybannerlight.jpg')">
-            <h1 class="#212121">How Many Hours Does This Cost?</h1>
-            <p class="#212121 flow-text">Minimum wage in the US is $7.25. How many hours would you have to work to buy these things? [TEXT WIP; MORE INFO LATER and also pretty this up later as well]</p>
-        </div>
-
-
-        <div class="container">
-            
-            <div class="row">
-            <div class="col s3 card-panel grey lighten-3" id="standardwagebox">
-                <div>
-                    <p>Iteration 1: standard min wage</p>
-                    <h1 class="#212121 center-align" style="font-size: 500%"> $7.25</h1>
-                </div> 
-                <p class="deep-orange-text">As of 10.30.2018</p>
-            </div>
-
-            <div class="col s1"></div> 
-
-            <div class="col s4 card-panel grey lighten-3" id="wagebystatebox">
-               <div>
-                    <p>Iteration 2: state min wage</p>
-                    <h3 class="#212121 center-align"> THIS IS GOING TO BE A DAOP-DOWN </h3>
-                </div> 
-                <p class="deep-orange-text">OR: Choose your state from the list below</p>
-                <p class="deep-orange-text">NOTE TO SELF: Use a https://materializecss.com/select.html for this</p>
-            </div>
-
-            <div class="col s1"></div>
-
-            <div class="col s3 card-panel grey lighten-3" id="inputwagebox">
-                    <div>
-                         <p>Iteration 3: input your hourly wage</p>
-                         <h3 class="#212121 center-align"> THIS IS GOING TO BE AN INPUT-BOX </h3>
-                     </div> 
-                     <p class="deep-orange-text">Here are input boxes: https://materializecss.com/text-inputs.html</p>
-                 </div>
-
-        </div>   <!-- this div goes to ROW with 7.25 -->
-
-    <!-- </div>   closes CONTAINER   -->

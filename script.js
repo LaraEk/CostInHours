@@ -58,8 +58,10 @@ $(document).ready(function(){
     const didneyworl = 105;    
 
 //RENT
-//Average rent for a month in US: $
-// https://www.numbeo.com/cost-of-living/country_result.jsp?country=United+States
+    const onebraptincity = 1238.65;
+    const onebraptoutcity = 979.03;
+    const threebraptincity = 2045.20;
+    const threebraptoutcity = 1582.14;
 
 //EDUCATION
 //<p>Average cost of college, 1 semester: $</p>
@@ -224,11 +226,27 @@ $("#nationalwagebutton").on("click", function() {
 
 // ----- RENT SECTION    
 // ---------- main rent card
-    costofrent = (avgmovieprice/natlminwage).toFixed(2);
- //   $("#costofrentdiv").text(costofrent + " HOURS");
+    costofrent = (onebraptincity/natlminwage).toFixed(2);
+   $("#costofrentdiv").text(costofrent + " HOURS");
     console.log("cost of rent is" + costofrent);
 
 // ---------- rent modal    
+    costofrentone = (onebraptincity/natlminwage).toFixed(2);
+    $("#onebraptincitydiv").text(costofrentone + " HOURS");
+    console.log("cost of rent is" + costofrentone);
+
+    costofrenttwo = (onebraptoutcity/natlminwage).toFixed(2);
+    $("#onebraptoutcitydiv").text(costofrenttwo + " HOURS");
+    console.log("cost of rent is" + costofrenttwo);
+
+    costofrentthree = (threebraptincity/natlminwage).toFixed(2);
+    $("#threebraptincitydiv").text(costofrentthree + " HOURS");
+    console.log("cost of rent is" + costofrentthree);
+
+    costofrentfour = (threebraptoutcity/natlminwage).toFixed(2);
+    $("#threebraptoutcitydiv").text(costofrentfour + " HOURS");
+    console.log("cost of rent is" + costofrentfour);
+
 
 // ----- EDU SECTION    
 // ---------- main edu card
