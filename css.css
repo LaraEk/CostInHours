@@ -123,12 +123,26 @@ img.responsive-image{
     }
   }
 
+  @media only screen and (max-width: 800px) {
+    h1 {
+        font-family: 'Abel';
+        font-weight: bold;
+        text-align: right;
+        background-color: rgb(255, 255, 255, .5);
+    }
+  }
+
 .costcards h3 {
     font-family: 'Abel';
     font-size: 150%;
     font-weight: bold;
     text-align: right;
     background-color: rgb(255, 255, 255, .5);
+}
+
+#centercard img{
+    width: 100%;
+    height: 100%;
 }
 
 #centercard h5 {
@@ -139,10 +153,10 @@ img.responsive-image{
 }
 
 .modal h4 {
-        font-family: 'Abel';
-        font-weight: bold;
-        text-align: left;
-        background-color: rgba(175, 215, 252, 0.3);    
+    font-family: 'Abel';
+    font-weight: bold;
+    text-align: left;
+    background-color: rgba(175, 215, 252, 0.3);    
 }
 
 /* ----- */
