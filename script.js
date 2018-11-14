@@ -50,16 +50,16 @@ $(document).ready(function(){
     const univmalltheater = 4.00;
 
 //FUN
-    const rennfesttkt = 26;
-//<p>Cost of Sports game</p>
-//<p>Cost of concert ticket</p>
-//<p>Cost of entrance to a club</p>
-//<p>cost of stand-up comedy show</p> 
-//<p>Cost of entrance to a fun fair</p>
-//<p>Cost of entrance to an amusement park</p>-->
+    const nfltix = 100.26;
+    const concerttix = 46.69;
+    const twobeers = 10.00;
+    const comedyshow = 60;
+    const rennfest = 26;
+    const didneyworl = 105;    
 
 //RENT
 //Average rent for a month in US: $
+// https://www.numbeo.com/cost-of-living/country_result.jsp?country=United+States
 
 //EDUCATION
 //<p>Average cost of college, 1 semester: $</p>
@@ -192,11 +192,35 @@ $("#nationalwagebutton").on("click", function() {
 
 // ----- FUN SECTION    
 // ---------- main fun card
-    costoffun = (rennfesttkt/natlminwage).toFixed(2);
+    costoffun = (rennfest/natlminwage).toFixed(2);
     $("#costoffundiv").text(costoffun + " HOURS");
     console.log("cost of fun is" + costoffun);
 
-// ---------- fun modal    
+// ---------- fun modal
+    costoffunone = (nfltix/natlminwage).toFixed(2);
+    $("#nfltixdiv").text(costoffunone + " HOURS");
+    console.log("cost of fun is" + costoffunone);
+
+    costoffuntwo = (concerttix/natlminwage).toFixed(2);
+    $("#concerttixdiv").text(costoffuntwo + " HOURS");
+    console.log("cost of fun is" + costoffuntwo);
+
+    costoffunthree = (twobeers/natlminwage).toFixed(2);
+    $("#twobeersdiv").text(costoffunthree + " HOURS");
+    console.log("cost of fun is" + costoffunthree);
+
+    costoffunfour = (comedyshow/natlminwage).toFixed(2);
+    $("#comedyshowdiv").text(costoffunfour + " HOURS");
+    console.log("cost of fun is" + costoffunfour);
+
+    costoffunfive = (rennfest/natlminwage).toFixed(2);
+    $("#rennfestdiv").text(costoffunfive + " HOURS");
+    console.log("cost of fun is" + costoffunfive);
+
+    costoffunsix = (didneyworl/natlminwage).toFixed(2);
+    $("#didneyworldiv").text(costoffunsix + " HOURS");
+    console.log("cost of fun is" + costoffunsix);
+
 
 // ----- RENT SECTION    
 // ---------- main rent card
