@@ -45,6 +45,9 @@ $(document).ready(function(){
 
 //MOVIE
     const avgmovieprice = 9.14;
+    const amctysonspeak = 14.59;
+    const amctysonsweekdaymatinee = 7.29;
+    const univmalltheater = 4.00;
 
 //FUN
     const rennfesttkt = 26;
@@ -108,27 +111,27 @@ $("#nationalwagebutton").on("click", function() {
 // ---------- gas modal    
     costofgasone = (agallonofgas/natlminwage).toFixed(2);
     $("#agallonofgasdiv").text(costofgasone + " HOURS");
-    console.log("cost of food is" + costofgasone);
+    console.log("cost of gas is" + costofgasone);
 
     costofgastwo = (agallonofdiesel/natlminwage).toFixed(2);
     $("#agallonofdieseldiv").text(costofgastwo + " HOURS");
-    console.log("cost of food is" + costofgastwo);
+    console.log("cost of gas is" + costofgastwo);
 
     costofgasthree = (fillasmalltank/natlminwage).toFixed(2);
     $("#fillasmalltankdiv").text(costofgasthree + " HOURS");
-    console.log("cost of food is" + costofgasthree);
+    console.log("cost of gas is" + costofgasthree);
 
     costofgasfour = (fillasmalldieseltank/natlminwage).toFixed(2);
     $("#fillasmalldieseltankdiv").text(costofgasfour + " HOURS");
-    console.log("cost of food is" + costofgasfour);
+    console.log("cost of gas is" + costofgasfour);
 
     costofgasfive = (fillalargetank/natlminwage).toFixed(2);
     $("#fillalargetankdiv").text(costofgasfive + " HOURS");
-    console.log("cost of food is" + costofgasfive);
+    console.log("cost of gas is" + costofgasfive);
 
     costofgassix = (fillalargedieseltank/natlminwage).toFixed(2);
     $("#fillalargedieseltankdiv").text(costofgassix + " HOURS");
-    console.log("cost of food is" + costofgassix);
+    console.log("cost of gas is" + costofgassix);
 
 
 // ----- METRO SECTION    
@@ -140,49 +143,85 @@ $("#nationalwagebutton").on("click", function() {
 // ---------- metro modal    
     costofmetroone = (peakmin/natlminwage).toFixed(2);
     $("#peakmindiv").text(costofmetroone + " HOURS");
-    console.log("cost of food is" + costofmetroone);
+    console.log("cost of metro is" + costofmetroone);
 
     costofmetrotwo = (peakmax/natlminwage).toFixed(2);
     $("#peakmaxdiv").text(costofmetrotwo + " HOURS");
-    console.log("cost of food is" + costofmetrotwo);
+    console.log("cost of metro is" + costofmetrotwo);
 
     costofmetrothree = (offpeakmin/natlminwage).toFixed(2);
     $("#offpeakmindiv").text(costofmetrothree + " HOURS");
-    console.log("cost of food is" + costofmetrothree);
+    console.log("cost of metro is" + costofmetrothree);
 
     costofmetrofour = (offpeakmax/natlminwage).toFixed(2);
     $("#offpeakmaxdiv").text(costofmetrofour + " HOURS");
-    console.log("cost of food is" + costofmetrofour);
+    console.log("cost of metro is" + costofmetrofour);
 
     costofmetrofive = (metroparking/natlminwage).toFixed(2);
     $("#metroparkingdiv").text(costofmetrofive + " HOURS");
-    console.log("cost of food is" + costofmetrofive);
+    console.log("cost of metro is" + costofmetrofive);
 
     costofmetrosix = (metroparkingmax/natlminwage).toFixed(2);
     $("#metroparkingmaxdiv").text(costofmetrosix + " HOURS");
-    console.log("cost of food is" + costofmetrosix);
+    console.log("cost of metro is" + costofmetrosix);
 
 
-
+// ----- MOVIE SECTION    
+// ---------- main movie card
     costofmovie = (avgmovieprice/natlminwage).toFixed(2);
     $("#costofmoviediv").text(costofmovie + " HOURS");
     console.log("cost of movie is" + costofmovie);
 
+// ---------- movie modal    
+    costofmovieone = (avgmovieprice/natlminwage).toFixed(2);
+    $("#avgmoviepricediv").text(costofmovieone + " HOURS");
+    console.log("cost of movie is" + costofmovieone);
+
+    costofmovietwo = (amctysonspeak/natlminwage).toFixed(2);
+    $("#amctysonspeakdiv").text(costofmovietwo + " HOURS");
+    console.log("cost of movie is" + costofmovietwo);
+
+    costofmoviethree = (amctysonsweekdaymatinee/natlminwage).toFixed(2);
+    $("#amctysonsweekdaymatineediv").text(costofmoviethree + " HOURS");
+    console.log("cost of movie is" + costofmoviethree);
+
+    costofmoviefour = (univmalltheater/natlminwage).toFixed(2);
+    $("#univmalltheaterdiv").text(costofmoviefour + " HOURS");
+    console.log("cost of movie is" + costofmoviefour);
+
+
+// ----- FUN SECTION    
+// ---------- main fun card
     costoffun = (rennfesttkt/natlminwage).toFixed(2);
     $("#costoffundiv").text(costoffun + " HOURS");
     console.log("cost of fun is" + costoffun);
 
+// ---------- fun modal    
+
+// ----- RENT SECTION    
+// ---------- main rent card
     costofrent = (avgmovieprice/natlminwage).toFixed(2);
  //   $("#costofrentdiv").text(costofrent + " HOURS");
     console.log("cost of rent is" + costofrent);
 
+// ---------- rent modal    
+
+// ----- EDU SECTION    
+// ---------- main edu card
     costofedu = (avgmovieprice/natlminwage).toFixed(2);
     $("#costofedudiv").text(costofedu + " HOURS");
     console.log("cost of edu is" + costofedu);
 
+// ---------- edu modal    
+    
+// ----- INS SECTION    
+// ---------- main ins card
     costofins = (avgmovieprice/natlminwage).toFixed(2);
     $("#costofinsdiv").text(costofins + " HOURS");
     console.log("cost of ins is" + costofins);
+
+// ---------- ins modal    
+
 })
 
 

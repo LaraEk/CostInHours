@@ -188,16 +188,38 @@
 
                         <div class="col s6 m4 14 costcards">
                             <div class="card teal lighten-2">
-                                <img width="450" 
-                                    height="350" 
-                                    src="./img/moviepic.png" 
-                                    class="responsive-img" 
-                                    alt="movie" 
-                                    title="movie" 
-                                    sizes="(max-width: 450px) 50vw, 450px">
+                                <a class="waves-effect waves-light modal-trigger" href="#moviemodal">
+                                    <img width="450" 
+                                        height="350" 
+                                        src="./img/moviepic.png" 
+                                        class="responsive-img" 
+                                        alt="movie" 
+                                        title="movie" 
+                                        sizes="(max-width: 450px) 50vw, 450px">
+                                    </a>
                                 <h1> MOVIE: <div id="costofmoviediv"></div></h1>
                             </div>
                         </div>
+
+                        <!-- Movie Info Modal -->
+                        <div id="moviemodal" class="modal">
+                          <div class="modal-content">
+                            <h4>Cost of Movies</h4>
+                            <p class="flow-text">Movie costs are calculated from <a href="https://www.boxofficemojo.com/about/adjuster.htm">
+                                this page</a>.  A selection of NoVA local ticket prices are below:  
+                            </p>
+                        
+                            <h5> National average for a movie ticket - Cost in Hours: <div id="avgmoviepricediv"></div></h5>
+                            <h5> Tyson's AMC Theater Peak Tickets - Cost in Hours: <div id="amctysonspeakdiv"></div></h5>
+                            <h5> Tyson's AMC Theater Weekday Matinee Tickets - Cost in Hours: <div id="amctysonsweekdaymatineediv"></div></h5>
+                            <h5> University Mall Theater Tickets - Cost in Hours: <div id="univmalltheaterdiv"></div></h5>
+                                         
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Return to Page</a>
+                          </div>
+                        </div>
+
                         <div class="col s6 m4 14 costcards">
                             <div class="card red accent-1">
                                 <img width="450" 
