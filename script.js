@@ -65,13 +65,45 @@ $(document).ready(function(){
 $("#nationalwagebutton").on("click", function() {
     console.log("I clicked it");
     
+// ----- FOOD SECTION    
+// ---------- main food card
     costoffood = (indivmonthlycost/natlminwage).toFixed(2);
     $("#costoffooddiv").text(costoffood + " HOURS");
     console.log("cost of food is" + costoffood);
 
+// ---------- food modal    
+    costoffoodone = (indivweeklycost/natlminwage).toFixed(2);
+    $("#costindivweeklydiv").text(costoffoodone + " HOURS");
+    console.log("cost of food is" + costoffoodone);
+
+    costoffoodtwo = (indivmonthlycost/natlminwage).toFixed(2);
+    $("#costindivmonthlydiv").text(costoffoodtwo + " HOURS");
+    console.log("cost of food is" + costoffoodtwo);
+
+    costoffoodthree = (familyoftwoweekly/natlminwage).toFixed(2);
+    $("#costfamtwoweeklydiv").text(costoffoodthree + " HOURS");
+    console.log("cost of food is" + costoffoodthree);
+
+    costoffoodtwo = (familyoftwomonthly/natlminwage).toFixed(2);
+    $("#costfamtwomonthlydiv").text(costoffoodtwo + " HOURS");
+    console.log("cost of food is" + costoffoodtwo);
+
+    costoffoodfive = (familyoffourweekly/natlminwage).toFixed(2);
+    $("#costfamfourweeklydiv").text(costoffoodfive + " HOURS");
+    console.log("cost of food is" + costoffoodfive);
+
+    costoffoodsix = (familyoffourmonthly/natlminwage).toFixed(2);
+    $("#costfamfourmonthlydiv").text(costoffoodsix + " HOURS");
+    console.log("cost of food is" + costoffoodsix);
+
+
+// ----- GAS SECTION    
+// ---------- main gas card
     costofgas = (fillasmalltank/natlminwage).toFixed(2);
     $("#costofgasdiv").text(costofgas + " HOURS");
     console.log("cost of gas is" + costofgas);
+
+// ---------- gas modal    
 
     costofmetro = (metroparking/natlminwage).toFixed(2);
     $("#costofmetrodiv").text(costofmetro + " HOURS");

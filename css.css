@@ -8,6 +8,14 @@ h4 {
     font-weight: bold;
 }
 
+h5 {
+    font-family: 'Abel';
+    font-size: 250%;
+    font-weight: bold;
+    text-align: right;
+    background-color: rgba(175, 215, 252, 0.3);
+}
+
 /* ------- */
 /* GENERAL */
 /* ------- */

@@ -39,33 +39,6 @@
         <p class="flow-text">Minimum wage in the United States is $7.25.  <br/>What can you buy with an hour?</p>
     </div>
 
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-      </div>
-    </div>
-
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Modal2</a>
-
-    <!-- Modal Structure -->
-    <div id="modal2" class="modal">
-      <div class="modal-content">
-        <h4>Modal2 Header</h4>
-        <p>A bunch 2of text</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree22</a>
-      </div>
-    </div>
-
-
     <div class="container">
         <div class="section">
             <div class="row">
@@ -93,22 +66,50 @@
             <div class="row">
                 <div class="col s12">
                     <div class="section">
+
                         <div class="col s12"> <!-- Title Span Column-->
-                            <span class="title">If I Want A Title It'll Go Here</span>
                             <a name="middle"></a>
+                            <span class="title">Click on images for detailed information.</span>
                         </div> <!-- End Title Span Column-->
+
                         <div class="col s6 m4 14 costcards">
                             <div class="card teal lighten-2">
-                                <img width="450" 
-                                    height="350" 
-                                    src="./img/foodpic.png" 
-                                    class="responsive-img" 
-                                    alt="food" 
-                                    title="food" 
-                                    sizes="(max-width: 450px) 50vw, 450px">
+                                <a class="waves-effect waves-light modal-trigger" href="#foodmodal">
+                                    <img width="450" 
+                                        height="350" 
+                                        src="./img/foodpic.png" 
+                                        class="responsive-img" 
+                                        alt="food" 
+                                        title="food" 
+                                        sizes="(max-width: 450px) 50vw, 450px">
+                                </a>
                                 <h1> FOOD: <div id="costoffooddiv"></div></h1>
                             </div>
                         </div>
+
+                        <!-- Food Info Modal -->
+                        <div id="foodmodal" class="modal">
+                          <div class="modal-content">
+                            <h4>Cost of Food</h4>
+                            <p class="flow-text">Food costs are calculated from the USDA's most recent monthly Food Cost Report;
+                                this calculation uses the monthly food costs for individuals between 19-50 at 
+                                the Moderate Cost plan.  (Median between M and F.)  For more costs see below: 
+                            </p>
+                            
+                            <h5> Individual Weekly Cost in Hours: <div id="costindivweeklydiv"></div></h5>
+                            <h5> Individual Monthly Cost in Hours: <div id="costindivmonthlydiv"></div></h5>
+                            <h5> Family of Two Weekly Cost in Hours: <div id="costfamtwoweeklydiv"></div></h5>
+                            <h5> Family of Two Monthly Cost in Hours: <div id="costfamtwomonthlydiv"></div></h5>
+                            <h5> Family of Four Weekly Cost in Hours: <div id="costfamfourweeklydiv"></div></h5>
+                            <h5> Family of Four Monthly Cost in Hours: <div id="costfamfourmonthlydiv"></div></h5>
+                        
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Return to Page</a>
+                          </div>
+                        </div>
+                    
+                        
                         <div class="col s6 m4 14 costcards">
                             <div class="card teal lighten-2">
                                 <img width="450" 
