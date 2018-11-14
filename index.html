@@ -222,18 +222,39 @@
 
                         <div class="col s6 m4 14 costcards">
                             <div class="card red accent-1">
-                                <img width="450" 
-                                    height="350" 
-                                    src="./img/costinhourslogo.png" 
-                                    class="responsive-img" 
-                                    alt="center card" 
-                                    title="center card" 
-                                    sizes="(max-width: 450px) 50vw, 450px">
-                                <h1>CENTER CARD</h1>
-                                <p>How are these figures reached?</p>
-                                <p>for example at Minimum wage, you have to work 4.55 hours to make $33</p>
+                                <a class="waves-effect waves-light modal-trigger" href="#centermodal">
+                                    <img width="450" 
+                                        height="350" 
+                                        src="./img/costinhourslogo.png" 
+                                        class="responsive-img" 
+                                        alt="center card" 
+                                        title="center card" 
+                                        sizes="(max-width: 450px) 50vw, 450px">
+                                </a>
+                                <h3>CALCULATING COST IN HOURS</h3>
                             </div>
                         </div>
+
+                        <!-- Central Info Modal -->
+                        <div id="centermodal" class="modal">
+                          <div class="modal-content">
+                            <h4>Cost in Hours</h4>
+                            <p>How is Cost in Hours calculated? Very simply, the cost of the item is 
+                                divided by minimum wage: this is how many hours a person making minimum wage  
+                                needs to work to afford that item. For example, at Minimum wage you have to work 
+                                4.43 hours to make $32.12, the amount needed to fill a 12-gal tank.
+                            </p>
+                            <p>Click on each image for more details, and for sources.  
+                                Sources are also cited at the bottom of this page.
+                            </p>
+
+                        </div>
+                          <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Return to Page</a>
+                          </div>
+                        </div>
+
+
                         <div class="col s6 m4 14 costcards">
                             <div class="card teal lighten-2">
                                 <img width="450" 
@@ -246,6 +267,8 @@
                                 <h1>ENTERTAINMENT: <div id="costoffundiv"></div></h1>
                             </div>
                         </div>
+
+
                         <div class="col s6 m4 14 costcards">
                             <div class="card teal lighten-2">
                                 <img width="450" 
@@ -258,6 +281,8 @@
                                 <h1>RENT: 525,600<div id="costofrentdiv"></div></h1>
                             </div>
                         </div>
+
+
                         <div class="col s6 m4 14 costcards">
                                 <div class="card teal lighten-2">
                                     <img width="450" 
@@ -270,6 +295,8 @@
                                     <h1>EDUCATION: <div id="costofedudiv"></div></h1>
                                 </div>
                         </div>
+
+
                         <div class="col s6 m4 14 costcards">
                             <div class="card teal lighten-2">
                                 <img width="450" 
@@ -283,6 +310,8 @@
                                 <a class="waves-effect waves-light btn-large" id="anotherbutton" href="#middle"><i class="material-icons right">arrow_forward</i>do I need a button here? I've got one if I need it.</a>
                             </div>
                         </div>
+
+                        
 
                     </div>
 
@@ -305,16 +334,25 @@
                     </p>
 
                     <p class="flow-text">
-                        <a href="">Department of Labour Minimum Wage website</a>.  See also the Wage and Hour Division's very interesting <a href="https://www.dol.gov/whd/minwage/coverage.htm">History of Minimum Wage</a>.
-                    </p>
+                        Gas costs are calculated from <a href="https://gasprices.aaa.com/">AAA's most recent national gas price average</a>, which as of 11.14.2018 is $2.677.
+                        </p>
 
+                    <p class="flow-text">
+                            Metro costs are calculated from <a href="https://www.wmata.com/fares/rail.cfm">the WMATA Metrorail Fares page</a>
+                        </p>
+
+                    <p class="flow-text">
+                            Movie ticket average drawn from <a href="https://www.boxofficemojo.com/about/adjuster.htm">this site</a>.  Theater prices are from local theaters.
+                        </p>
+    
                     <p class="flow-text">
                         <a href="">Department of Labour Minimum Wage website</a>.  See also the Wage and Hour Division's very interesting <a href="https://www.dol.gov/whd/minwage/coverage.htm">History of Minimum Wage</a>.
                     </p>
 
                     <p class="flow-text">
-                        Movie ticket average drawn from <a href="https://www.boxofficemojo.com/about/adjuster.htm">this site</a>.
+                        <a href="">Department of Labour Minimum Wage website</a>.  See also the Wage and Hour Division's very interesting <a href="https://www.dol.gov/whd/minwage/coverage.htm">History of Minimum Wage</a>.
                     </p>
+
 
                     <p class="flow-text">Stock images are drawn from pexels.com and canva.com.  Background is from <a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a>; CSS pattern is from <a href="http://www.patternify.com/">Patternify</a>.</p>
                     
