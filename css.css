@@ -69,6 +69,11 @@ h4 {
     font-weight: bold;
 }
 
+.sourcesbox p {
+    font-family: 'Lato'; 
+    font-size: 18px;
+}
+
 
 /* #standardwagebox {
     margin: 25px;

@@ -19,21 +19,27 @@ $(document).ready(function(){
 //METRO
     const metroparking = 4.85;
 
+//MOVIE
+    const avgmovieprice = 9.14;
+
 $("#nationalwagebutton").on("click", function() {
-    alert("I clicked it");
     console.log("I clicked it");
     
-    costoffood = (familyfouroneweek/natlminwage);
-    $("#costoffooddiv").text(costoffood);
+    costoffood = (familyfouroneweek/natlminwage).toFixed(2);
+    $("#costoffooddiv").text(costoffood + "HOURS");
     console.log("cost of food is" + costoffood);
 
-    costofgas = (fillasmalltank/natlminwage);
-    $("#costofgasdiv").text(costofgas);
+    costofgas = (fillasmalltank/natlminwage).toFixed(2);
+    $("#costofgasdiv").text(costofgas + "HOURS");
     console.log("cost of gas is" + costofgas);
 
-    costofmetro = (metroparking/natlminwage);
-    $("#costofmetrodiv").text(costofmetro);
+    costofmetro = (metroparking/natlminwage).toFixed(2);
+    $("#costofmetrodiv").text(costofmetro + "HOURS");
     console.log("cost of metro is" + costofmetro);
+
+    costofmovie = (avgmovieprice/natlminwage).toFixed(2);
+    $("#costofmoviediv").text(costofmovie + "HOURS");
+    console.log("cost of movie is" + costofmovie);
 
 })
 
