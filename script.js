@@ -263,7 +263,7 @@ $("#nationalwagebutton").on("click", function() {
     console.log("cost of edu is" + costofeduone);
 
     costofedutwo = (comcoll/natlminwage).toFixed(2);
-    $("#comcolldiv").text(costofedutwo + " HOURS");
+    $("#commcolldiv").text(costofedutwo + " HOURS");
     console.log("cost of edu is" + costofedutwo);
 
 

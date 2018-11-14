@@ -114,6 +114,15 @@ img.responsive-image{
     background-color: rgb(255, 255, 255, .5);
 }
 
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-family: 'Abel';
+        font-weight: bold;
+        text-align: right;
+        background-color: rgb(255, 255, 255, .5);
+    }
+  }
+
 .costcards h3 {
     font-family: 'Abel';
     font-size: 150%;
@@ -127,6 +136,13 @@ img.responsive-image{
     font-size: 90%;
     font-weight: bold;
     text-align: center;
+}
+
+.modal h4 {
+        font-family: 'Abel';
+        font-weight: bold;
+        text-align: left;
+        background-color: rgba(175, 215, 252, 0.3);    
 }
 
 /* ----- */
