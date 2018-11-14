@@ -91,7 +91,8 @@
                         <div id="foodmodal" class="modal">
                           <div class="modal-content">
                             <h4>Cost of Food</h4>
-                            <p class="flow-text">Food costs are calculated from the USDA's most recent monthly Food Cost Report;
+                            <p class="flow-text">Food costs are calculated from <a href="https://www.cnpp.usda.gov/sites/default/files/CostofFoodSep2018.pdf">
+                                the USDA's most recent monthly Food Cost Report</a>;
                                 this calculation uses the monthly food costs for individuals between 19-50 at 
                                 the Moderate Cost plan.  (Median between M and F.)  For more costs see below: 
                             </p>
@@ -112,16 +113,41 @@
                         
                         <div class="col s6 m4 14 costcards">
                             <div class="card teal lighten-2">
-                                <img width="450" 
-                                    height="350" 
-                                    src="./img/gaspic.png" 
-                                    class="responsive-img" 
-                                    alt="gas" 
-                                    title="gas" 
-                                    sizes="(max-width: 450px) 50vw, 450px">
+                                <a class="waves-effect waves-light modal-trigger" href="#gasmodal">
+                                    <img width="450" 
+                                        height="350" 
+                                        src="./img/gaspic.png" 
+                                        class="responsive-img" 
+                                        alt="gas" 
+                                        title="gas" 
+                                        sizes="(max-width: 450px) 50vw, 450px">
+                                </a>
                                 <h1> GAS: <div id="costofgasdiv"></div></h1>
                             </div>
                         </div>
+
+                        <!-- Gas Info Modal -->
+                        <div id="gasmodal" class="modal">
+                          <div class="modal-content">
+                            <h4>Cost of Gas</h4>
+                            <p class="flow-text">Gas costs are calculated from <a href="https://gasprices.aaa.com/">
+                                AAA's most recent national gas price average</a>, which as of 11.14.2018 is $2.677.
+                                Diesel, as of 11.13.2018, is 3.273/gal.  See below:
+                            </p>
+                            
+                            <h5> A Gallon of Gas Cost in Hours: <div id="agallonofgasdiv"></div></h5>
+                            <h5> A Gallon of Diesel Cost in Hours: <div id="agallonofdieseldiv"></div></h5>
+                            <h5> Fill a Small (12-gal) Tank Cost in Hours: <div id="fillasmalltankdiv"></div></h5>
+                            <h5> Fill a Large (15-gal) Tank Cost in Hours: <div id="fillasmalldieseltankdiv"></div></h5>
+                            <h5> Fill a Small (12-gal) Diesel Tank in Hours: <div id="fillalargetankdiv"></div></h5>
+                            <h5> Fill a Large (15-gal) Diesel Tank Cost in Hours: <div id="fillalargedieseltankdiv"></div></h5>
+                        
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Return to Page</a>
+                          </div>
+                        </div>
+
                         <div class="col s6 m4 14 costcards">
                             <div class="card teal lighten-2">
                                 <img width="450" 

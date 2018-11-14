@@ -28,11 +28,12 @@ $(document).ready(function(){
     const familyoffourmonthly = 1057;
 
 //GAS
-    const fillasmalltank = 33;
-//    Nat'l avg: $2.75/gal [as of 11.9.2018]</p>
-//    <p>Fill a 12-gal tank: $33</p>
-//    <p>Fill a 15-gal tank: $41.25</p>
-
+    const agallonofgas = 2.677;
+    const agallonofdiesel = 3.273;
+    const fillasmalltank = 32.124;
+    const fillasmalldieseltank = 39.276;
+    const fillalargetank = 40.155;
+    const fillalargedieseltank = 49.095;
 
 //METRO
     const metroparking = 4.85;
@@ -104,7 +105,32 @@ $("#nationalwagebutton").on("click", function() {
     console.log("cost of gas is" + costofgas);
 
 // ---------- gas modal    
+    costofgasone = (agallonofgas/natlminwage).toFixed(2);
+    $("#agallonofgasdiv").text(costofgasone + " HOURS");
+    console.log("cost of food is" + costofgasone);
 
+    costofgastwo = (agallonofdiesel/natlminwage).toFixed(2);
+    $("#agallonofdieseldiv").text(costofgastwo + " HOURS");
+    console.log("cost of food is" + costofgastwo);
+
+    costofgasthree = (fillasmalltank/natlminwage).toFixed(2);
+    $("#fillasmalltankdiv").text(costofgasthree + " HOURS");
+    console.log("cost of food is" + costofgasthree);
+
+    costofgasfour = (fillasmalldieseltank/natlminwage).toFixed(2);
+    $("#fillasmalldieseltankdiv").text(costofgasfour + " HOURS");
+    console.log("cost of food is" + costofgasfour);
+
+    costofgasfive = (fillalargetank/natlminwage).toFixed(2);
+    $("#fillalargetankdiv").text(costofgasfive + " HOURS");
+    console.log("cost of food is" + costofgasfive);
+
+    costofgassix = (fillalargedieseltank/natlminwage).toFixed(2);
+    $("#fillalargedieseltankdiv").text(costofgassix + " HOURS");
+    console.log("cost of food is" + costofgassix);
+
+
+    
     costofmetro = (metroparking/natlminwage).toFixed(2);
     $("#costofmetrodiv").text(costofmetro + " HOURS");
     console.log("cost of metro is" + costofmetro);
